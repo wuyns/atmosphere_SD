@@ -4,14 +4,18 @@
 
 ## 注意事项
 
-为了防止误操作进入大气层真实系统导致ban机，我在`bootload/hekate_ipl.ini`中删除了这个选项，如果你需要使用大气层真实系统，请下载[hekate_ipl.ini](https://github.com/esrrhs/atmosphere-switch/blob/master/hekate_ipl.ini)替换本项目的`hekate_ipl.ini`
+为了防止误操作进入大气层真实系统导致ban机，我在`bootload/hekate_ipl.ini`中删除了这个选项，如果你需要使用大气层真实系统，请使用`bootload/hekate_ipl.ini.bak`文件替换`bootload/hekate_ipl.ini`
+
+建立虚拟系统建议使用`SD Partition`而非`SD File`，原因是`SD Partition`对比`SD File`有明显的速度优势
+
+已经在机器上通过测试，暂未发现任何Bug
 
 ## 使用方法
 
 1. Code -> Download ZIP
 2. 格式化SD卡
 3. 解压ZIP文档，将其中的文件全部复制到SD卡根目录
-4. 按照正常的软破解流程进入hekate，建立虚拟系统（如果你的机器没有被ban的话）
+4. 按照正常的软破解流程进入hekate，建立虚拟系统（如果你的机器已经被ban的话，当然可以不建立虚拟系统直接使用CFW-sysMMC进入大气层真实系统，不会占用SD卡额外的空间，而且速度比较好）
 5. 进入CFW-emuMMC
 
 ## 已安装的软件
